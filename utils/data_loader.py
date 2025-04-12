@@ -24,7 +24,7 @@ def load_data(city):
     temp = current['temp_c']
     hours = [h['time'][-5:] for h in forecast_hours]
     temps = [h['temp_c'] for h in forecast_hours]
-    ap = [h['pressure_mb'] for h in forecast_hours]
+    ap = [h['pressure_mb'] * 0.75 for h in forecast_hours]
     humidity = [h['humidity'] for h in forecast_hours]
     wind = [h['wind_kph'] for h in forecast_hours]
     wind_dirs = [h['wind_degree'] for h in forecast_hours]

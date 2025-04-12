@@ -28,7 +28,7 @@ def register_callbacks(app):
 
         ap_fig = go.Figure(
            data=[go.Scatter(x=data['hours'], y=data['ap'], mode='lines+markers', name='Атмосферное давление')],
-           layout=go.Layout(title='Атмосферное давление по часам', xaxis_title='Время', yaxis_title='pa', template='plotly_dark') 
+           layout=go.Layout(title='Атмосферное давление по часам', xaxis_title='Время', yaxis_title='АД (мм рт.cт.)', template='plotly_dark') 
         )
 
         wind_dir_fig = go.Figure(
