@@ -41,7 +41,7 @@ def register_callbacks(app):
         )
 
         wind_dir_fig.update_layout(
-            title='Направление и скорость ветра',
+            title='Направление и скорость ветра (м/с)',
             template='plotly_dark',
             polar=dict(
                 angularaxis=dict(
@@ -51,10 +51,6 @@ def register_callbacks(app):
                     tickvals=[0, 45, 90, 135, 180, 225, 270, 315],
                     ticktext=["С", "СВ", "В", "ЮВ", "Ю", "ЮЗ", "З", "СЗ"]
                 ),
-            
-            radialaxis=dict(
-                title="Скорость ветра (км/ч)"
-                )
             )
         )
         
