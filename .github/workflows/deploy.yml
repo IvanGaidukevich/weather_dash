@@ -26,6 +26,6 @@ jobs:
               source venv/bin/activate &&
               pip install -r requirements.txt &&
               sudo systemctl daemon-reload &&
-              sudo systemctl restart dashboard &&
+              sudo systemctl restart dashapp &&
               sudo systemctl restart nginx
             "
