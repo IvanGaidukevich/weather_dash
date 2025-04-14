@@ -22,7 +22,7 @@ jobs:
           ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} '
             git -c safe.directory=/home/dashboard/my_dash_app &&
             cd ${{ secrets.PROJECT_DIR }} && 
-            pull origin main &&
+            git pull origin main &&
             source venv/bin/activate &&
             pip install -r requirements.txt &&
             sudo systemctl daemon-reload &&
